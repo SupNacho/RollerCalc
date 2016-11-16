@@ -157,7 +157,7 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onClick(View view) {
                 if (lockFlag == 0) {
-                    setRequestedOrientation(ActivityInfo.SCREEN_ORIENTATION_LOCKED);
+                    setRequestedOrientation(ActivityInfo.SCREEN_ORIENTATION_NOSENSOR);
                     lockFlag = 1;
                 } else {
                     setRequestedOrientation(ActivityInfo.SCREEN_ORIENTATION_SENSOR);
