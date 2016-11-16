@@ -1,0 +1,29 @@
+<resources>
+    <string name="app_name">RollerCalc</string>
+    <string name="calculate">Calculate</string>
+    <string name="innerDesc">Inner Ø mm:</string>
+    <string name="outerDesc">Outer Ø mm:</string>
+    <string name="result">Result</string>
+    <string name="textview">TextView</string>
+    <string name="textview2">TextView</string>
+    <string name="textview3">TextView</string>
+    <string name="thicknesDesc">Thicknes μ:</string>
+    <string name="aboutBut">v0.2 info</string>
+    <string name="prefBut">prefs</string>
+    <string name="rotate">Rotate</string>
+    <string name="aboutB">v0.2 info</string>
+    <string name="prefs">prefs</string>
+    <string name="v0_2_info">v0.2 info</string>
+    <string name="calculateB">Calculate</string>
+    <string name="innerD">Inner Ø mm:</string>
+    <string name="outerD">Outer Ø mm:</string>
+    <string name="resultV">Result</string>
+    <string name="textview1">TextView</string>
+    <string name="textview22">TextView</string>
+    <string name="textview33">TextView</string>
+    <string name="thicknes">Thicknes μ:</string>
+    <string name="about_but">v0.2 info</string>
+    <string name="editOutD">143</string>
+    <string name="editInD">215</string>
+    <string name="editInDtrue">82</string>
+</resources>
