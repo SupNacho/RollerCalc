@@ -25,5 +25,13 @@
     <string name="about_but">v0.2 info</string>
     <string name="editOutD">143</string>
     <string name="editInD">215</string>
+    <string name="menu_pref">Preference</string>
+    <string name="menu_about">About</string>
+    <string name="menu_main">Calculate</string>
     <string name="editInDtrue">82</string>
+    <string name="about_title">About App</string>
+    <string name="pref_title">Preferences</string>
+    <string name="about_app">About app</string>
+    <string name="preference_txt">Preference txt</string>
+
 </resources>

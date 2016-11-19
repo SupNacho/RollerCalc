@@ -1,16 +1,21 @@
 package ru.supernacho.rollercalc;
 
+import android.content.Intent;
 import android.content.pm.ActivityInfo;
 import android.net.Uri;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.view.Gravity;
 import android.view.KeyEvent;
+import android.view.Menu;
+import android.view.MenuItem;
 import android.view.View;
 import android.view.ViewDebug;
 import android.widget.EditText;
 import android.widget.ImageButton;
 import android.widget.SeekBar;
 import android.widget.TextView;
+import android.widget.Toast;
 
 import com.google.android.gms.appindexing.Action;
 import com.google.android.gms.appindexing.AppIndex;
@@ -35,6 +40,12 @@ public class MainActivity extends AppCompatActivity {
      * See https://g.co/AppIndexing/AndroidStudio for more information.
      */
     private GoogleApiClient client;
+
+    @Override
+    public boolean onCreateOptionsMenu(Menu menu) {
+        getMenuInflater().inflate(R.menu.menu_main,menu);
+        return true;
+    }
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -159,13 +170,29 @@ public class MainActivity extends AppCompatActivity {
                 if (lockFlag == 0) {
                     setRequestedOrientation(ActivityInfo.SCREEN_ORIENTATION_NOSENSOR);
                     lockFlag = 1;
+                    Toast toast = Toast.makeText(getApplicationContext(), "Screen rotation is locked",Toast.LENGTH_SHORT);
+                    toast.setGravity(Gravity.CENTER, 0,0);
+                    toast.show();
                 } else {
                     setRequestedOrientation(ActivityInfo.SCREEN_ORIENTATION_SENSOR);
+                    Toast toast = Toast.makeText(getApplicationContext(), "Screen rotation is unlocked",Toast.LENGTH_SHORT);
+                    toast.setGravity(Gravity.CENTER, 0,0);
+                    toast.show();
                 }
             }
         });
 
 
+
+    }
+    public void onAboutClick (MenuItem item){
+        Intent intent = new Intent(MainActivity.this, AboutActivity.class);
+        startActivity(intent);
+    }
+
+    public void onPrefClick (MenuItem item){
+        Intent intent = new Intent(MainActivity.this, PrefActivity.class);
+        startActivity(intent);
     }
 
     @Override
