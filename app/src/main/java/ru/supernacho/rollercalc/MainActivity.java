@@ -186,12 +186,12 @@ public class MainActivity extends AppCompatActivity {
 
     }
     public void onAboutClick (MenuItem item){
-        Intent intent = new Intent(MainActivity.this, AboutActivity.class);
+        Intent intent = new Intent(MainActivity.this, AbActivity.class);
         startActivity(intent);
     }
 
     public void onPrefClick (MenuItem item){
-        Intent intent = new Intent(MainActivity.this, PrefActivity.class);
+        Intent intent = new Intent(MainActivity.this, SetActivity.class);
         startActivity(intent);
     }
 
