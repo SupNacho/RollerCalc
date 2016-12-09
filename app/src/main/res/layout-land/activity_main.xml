@@ -31,83 +31,6 @@
         android:layout_alignParentRight="true"
         android:layout_alignParentEnd="true" />
 
-    <SeekBar
-        style="@android:style/Widget.Material.SeekBar.Discrete"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:max="1000"
-        android:progress="215"
-        android:id="@+id/thickBar"
-        tools:ignore="NewApi,RtlHardcoded"
-        android:layout_below="@+id/editThick"
-        android:layout_alignParentLeft="true"
-        android:layout_alignParentStart="true"
-        android:layout_alignParentRight="true"
-        android:layout_alignParentEnd="true" />
-
-    <SeekBar
-        style="@style/Widget.AppCompat.SeekBar.Discrete"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:max="200"
-        android:progress="81"
-        android:id="@+id/innerBar"
-        tools:ignore="RtlHardcoded"
-        android:layout_below="@+id/editInD"
-        android:layout_alignParentLeft="true"
-        android:layout_alignParentStart="true" />
-
-    <SeekBar
-        style="@android:style/Widget.Material.SeekBar.Discrete"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:max="300"
-        android:progress="145"
-        android:id="@+id/outBar"
-        tools:ignore="NewApi"
-        android:layout_below="@+id/editOut"
-        android:layout_alignParentLeft="true"
-        android:layout_alignParentStart="true"
-        android:layout_alignParentRight="true"
-        android:layout_alignParentEnd="true" />
-
-    <EditText
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:inputType="number"
-        android:ems="3"
-        android:id="@+id/editInD"
-        android:text="@string/editInDtrue"
-        android:textSize="14sp"
-        android:layout_alignBaseline="@+id/innerDesc1"
-        android:layout_alignBottom="@+id/innerDesc1"
-        android:layout_centerHorizontal="true" />
-
-    <EditText
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:inputType="number"
-        android:ems="3"
-        android:id="@+id/editOut"
-        android:text="@string/editOutD"
-        android:textSize="14sp"
-        android:layout_alignBaseline="@+id/outDesc1"
-        android:layout_alignBottom="@+id/outDesc1"
-        android:layout_centerHorizontal="true" />
-
-    <EditText
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:inputType="number"
-        android:ems="3"
-        android:id="@+id/editThick"
-        android:text="@string/editInD"
-        android:textSize="14sp"
-        android:layout_alignBaseline="@+id/thicknesDesc1"
-        android:layout_alignBottom="@+id/thicknesDesc1"
-        android:layout_alignLeft="@+id/editInD"
-        android:layout_alignStart="@+id/editInD" />
-
     <TextView
         android:text="@string/thicknes"
         android:layout_width="wrap_content"
@@ -136,5 +59,86 @@
         android:layout_below="@+id/innerBar"
         android:layout_alignParentLeft="true"
         android:layout_alignParentStart="true" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="number"
+        android:ems="3"
+        android:id="@+id/editThick"
+        android:text="@string/editInD"
+        android:textSize="14sp"
+        android:layout_alignBaseline="@+id/thicknesDesc1"
+        android:layout_alignBottom="@+id/thicknesDesc1"
+        android:layout_toRightOf="@+id/outDesc1"
+        android:layout_toEndOf="@+id/outDesc1" />
+
+    <SeekBar
+        style="@android:style/Widget.Material.SeekBar.Discrete"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:max="1000"
+        android:progress="215"
+        android:id="@+id/thickBar"
+        tools:ignore="NewApi,RtlHardcoded"
+        android:layout_below="@+id/resultView"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:layout_toRightOf="@+id/editThick"
+        android:layout_toEndOf="@+id/editThick" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="number"
+        android:ems="3"
+        android:id="@+id/editInD"
+        android:text="@string/editInDtrue"
+        android:textSize="14sp"
+        android:layout_alignBaseline="@+id/innerDesc1"
+        android:layout_alignBottom="@+id/innerDesc1"
+        android:layout_alignLeft="@+id/editThick"
+        android:layout_alignStart="@+id/editThick" />
+
+    <SeekBar
+        style="@style/Widget.AppCompat.SeekBar.Discrete"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:max="200"
+        android:progress="81"
+        android:id="@+id/innerBar"
+        tools:ignore="RtlHardcoded"
+        android:layout_alignTop="@+id/innerDesc1"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:layout_toRightOf="@+id/editInD"
+        android:layout_toEndOf="@+id/editInD" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="number"
+        android:ems="3"
+        android:id="@+id/editOut"
+        android:text="@string/editOutD"
+        android:textSize="14sp"
+        android:layout_alignBaseline="@+id/outDesc1"
+        android:layout_alignBottom="@+id/outDesc1"
+        android:layout_toRightOf="@+id/outDesc1"
+        android:layout_toEndOf="@+id/outDesc1" />
+
+    <SeekBar
+        style="@android:style/Widget.Material.SeekBar.Discrete"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:max="300"
+        android:progress="145"
+        android:id="@+id/outBar"
+        tools:ignore="NewApi"
+        android:layout_below="@+id/editInD"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:layout_toRightOf="@+id/editInD"
+        android:layout_toEndOf="@+id/editInD" />
 
 </RelativeLayout>
